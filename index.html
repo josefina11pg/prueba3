@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facu te amo 🥰</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+   <canvas id="starCanvas"></canvas>
+   
+   <!-- Diapositiva 1: Botón inicial -->
+    <div class="slide" id="slide1">
+        <button onclick="nextSlide('slide2')">Apriete aquí solo si me ama</button>
+    </div>
+
+    <!-- Diapositiva 2: ¿Estás seguro? -->
+    <div class="slide" id="slide2" style="display:none;">
+        <h2>¿Estás seguro?</h2>
+        <img src="https://media.tenor.com/YDns1kCTW5sAAAAi/peahc-and-goma-hug.gif" alt="Un gif simpático">
+        <div class="buttons">
+            <button onclick="nextSlide('slide3')">Chi</button>
+            <button onclick="nextSlide('slideNo')">No</button>
+        </div>
+    </div>
+
+    <!-- Diapositiva 3: Chi - Imagen y frase -->
+    <div class="slide" id="slide3" style="display:none;">
+        <img src="https://media.tenor.com/WKCutj8Z3IIAAAAi/peach-goma.gif" alt="Imagen romántica">
+        <p>Lo sabia! y yo te amo mucho más! </p>
+        <button onclick="nextSlide('slide4')">Continuar</button>
+    </div>
+
+    <!-- Diapositiva No: No - Imagen y regreso -->
+    <div class="slide" id="slideNo" style="display:none;">
+        <img src="https://media.tenor.com/jSpsA6J5Ll0AAAAi/gatito-llorando.gif alt="Gif triste">
+        <p>😧😨 Acaso me odias facundo?? uyyy ya me hiciste enojarr 😤😠😡
+        <button onclick="nextSlide('slide2')">Me equivoque de boton CLARAMENTE</button>
+    </div>
+
+    <!-- Diapositiva 4: Frase con confeti -->
+    <div class="slide" id="slide4" style="display:none;">
+        <h1>🎉✨ Feliz 1er año mi amor! ✨🌸 </h1>
+        <div class="confetti"></div>
+        <button onclick="nextSlide('slide5')">Continuar</button>
+    </div>
+
+    <!-- Diapositivas 5 y 6: Frases -->
+    <div class="slide" id="slide5" style="display:none;">
+        <p>En distancia te amo millones… billones de veces al cielo, al sol, a pluton y cualquier galaxia que queramos inventarnos de ahora en adelante </p>
+        <button onclick="nextSlide('slide6')">Continuar</button>
+    </div>
+    <div class="slide" id="slide6" style="display:none;">
+        <p>aaaaaaaaaah no te esperabas que te arme algo asi no??? 🤭.</p>
+        <button onclick="nextSlide('slide7')">Continuar</button>
+    </div>
+
+    <!-- Secuencia de 12 fotos -------------------------->
+    <div class="slide" id="slide7" style="display:none;">
+        <img src="path_to_photo1.jpg" alt="Foto del primer mes">
+        <p>Pie de imagen para el primer mes</p>
+        <button onclick="nextSlide('slide8')">Continuar</button>
+    </div>
+
+    <div class="slide" id="slide8" style="display:none;">
+        <img src="path_to_photo2.jpg" alt="Foto del segundo mes">
+        <p>Pie de imagen para el segundo mes</p>
+        <button onclick="nextSlide('slide9')">Continuar</button>
+    </div>
+
+    <div class="slide" id="slide9" style="display:none;">
+        <img src="path_to_photo1.jpg" alt="Foto del mes">
+        <p>Pie de imagen para el ..... mes</p>
+        <button onclick="nextSlide('slide10')">Continuar</button>
+    </div>
+
+    <div class="slide" id="slide10" style="display:none;">
+        <img src="path_to_photo2.jpg" alt="Foto del mes">
+        <p>Pie de imagen para el.... mes</p>
+        <button onclick="nextSlide('slide11')">Continuar</button>
+    </div>
+    
+     <div class="slide" id="slide11" style="display:none;">
+        <img src="path_to_photo1.jpg" alt="Foto del mes">
+        <p>Pie de imagen para el ..... mes</p>
+        <button onclick="nextSlide('slide12')">Continuar</button>
+    </div>
+
+    <div class="slide" id="slide12" style="display:none;">
+        <img src="path_to_photo2.jpg" alt="Foto del mes">
+        <p>Pie de imagen para el.... mes</p>
+        <button onclick="nextSlide('slide13')">Continuar</button>
+    </div>
+    
+        <div class="slide" id="slide13" style="display:none;">
+        <img src="path_to_photo1.jpg" alt="Foto del mes">
+        <p>Pie de imagen para el ..... mes</p>
+        <button onclick="nextSlide('slide14')">Continuar</button>
+    </div>
+
+    <div class="slide" id="slide14" style="display:none;">
+        <img src="path_to_photo2.jpg" alt="Foto del mes">
+        <p>Pie de imagen para el.... mes</p>
+        <button onclick="nextSlide('slide15')">Continuar</button>
+    </div>
+        <div class="slide" id="slide15" style="display:none;">
+        <img src="path_to_photo1.jpg" alt="Foto del mes">
+        <p>Pie de imagen para el ..... mes</p>
+        <button onclick="nextSlide('slide16')">Continuar</button>
+    </div>
+
+    <div class="slide" id="slide16" style="display:none;">
+        <img src="path_to_photo2.jpg" alt="Foto del mes">
+        <p>Pie de imagen para el.... mes</p>
+        <button onclick="nextSlide('slide17')">Continuar</button>
+    </div>
+        <div class="slide" id="slide17" style="display:none;">
+        <img src="path_to_photo1.jpg" alt="Foto del mes">
+        <p>Pie de imagen para el ..... mes</p>
+        <button onclick="nextSlide('slide18')">Continuar</button>
+    </div>
+
+    <div class="slide" id="slide18" style="display:none;">
+        <img src="path_to_photo2.jpg" alt="Foto del mes">
+        <p>Pie de imagen para el.... mes</p>
+        <button onclick="nextSlide('slide20')">Continuar</button>
+    </div>
+
+    <!-- Botón que se mueve -->
+    <div class="slide" id="slide20" style="display:none;">
+        <p>Haz clic en el botón... ¡Si puedes!</p>
+        <button id="trickyButton" onclick="nextSlide('slide21')">Apriete aquí</button>
+    </div>
+
+    <!-- Diapositiva 21: Frase y carta -->
+    <div class="slide" id="slide21" style="display:none;">
+        <p>Frase final aquí...</p>
+        <p>Mi carta de amor: <span id="carta"></span></p>
+        <button onclick="nextSlide('slide22')">Continuar</button>
+    </div>
+
+    <!-- Diapositiva 22: Gif y reinicio -->
+    <div class="slide" id="slide22" style="display:none;">
+        <img src="https://media.tenor.com/J6RfhiZXpxMAAAAi/gatitos.gif" alt="Gif animado">
+        <button onclick="restart()">Reiniciar</button>
+    </div>
+
+   
+   
+</body>
+<body>
+    <canvas id="starCanvas"></canvas>
+    <!-- Tu contenido de presentación aquí -->
+</body>
+</html>
